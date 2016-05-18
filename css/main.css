@@ -1,0 +1,69 @@
+html {
+    background-color:#ffffff;
+    width:100%;
+    height:100%;
+}
+.header {
+    background-color:#66B698;
+    height: 200px;
+    width: 100%;
+}
+#title {
+    font-family:'oswald';
+    color: #ffffff;
+    font-size: 60px;
+    text-align:center;
+    width:100%;
+}
+/*NAVIGATION CODE STARTS HERE*/
+.navigation { 
+    display: block;
+    margin: 0 auto;
+}
+.navigation ul {
+  font: bold 14px "oswald", Helvetica, Arial, sans-serif;
+  margin:  0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.navigation li {
+  display: inline-block;
+}
+.navigation a {
+  background: #395870;
+  background: linear-gradient(#EAEAEA, #49AD87);
+  border-right: 1px solid rgba(0, 0, 0, .3);
+  color: #fff;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+.navigation a:hover {
+  background: #2D7F60;
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .3);
+}
+.navigation li:first-child a {
+  border-radius: 4px 0 0 4px;
+}
+.navigation li:last-child a {
+  border-right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/*NAVIGATION CODE ENDS HERE*/
+.menu {
+    border-radius: 5%;
+    background-color:#D8DBD8;
+    width: 100%;
+    height: 300px;
+}
+#items {
+    
+}
+ 
+li {
+  background: url("images/burger-flat.png");
+  background: no-repeat;
+  background-attachment: fixed;
+  list-style-type: none;
+  padding-left: 12px;
+}
