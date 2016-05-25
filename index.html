@@ -1,30 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <link rel="stylesheet" href="css/main.css" type="text/css" />
-         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-         <link rel="icon" type="icon" href="images/burger-flat.png" />
-    </head>
-    <body>
-        <section class="header">
-            <h1 id='title'> CHARLIES BURGERS</h1>
-            <nav class="navigation">
-              <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-              </ul>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Charlies Burgers | Fresno, Ca | Fake Company</title>
+    <meta name="description" content="This is a website for a non-existent business. Any pictures, items, content is invalid."/>
+    <meta name="keywords" content="burgers, fresno, food, charlies burgers, burgershop, fast food, new, restaurants, cambridge and blackstone, fake website"/>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="icon" href="images/Burger.png" /> 
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+
+</head>
+<body>
+    <section class="header">
+        <h1 id='title'> CHARLIES BURGERS</h1>
+    </section>
+    <section class="menu-bar">
+       <div class="menu-wrap">
+            <nav class="menu">
+                <ul class="clearfix">
+                    <li class="current-item"><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li>
+                        <a href="#">About <span class="arrow">&#9660;</span></a>
+ 
+                        <ul class="sub-menu">
+                            <li><a href="#">Basic Information</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="owner.html">Owner</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </nav>
-        </section>
-        <section class="menu">
-            <ul>
-                <li>Char-Burger Special</li>
-                <li>California Burger</li>
-                <li>Hawaiian Burger</li>
-            </ul>
-        </section>
-    </body>
+        </div>
+    </section>   
+    <section class="quote">
+    <div class="image">
+
+      <img id="ch" src="images/rest.jpg" alt="Charlies Burgers restaurant"  height="525" width="300"  />
+      
+      <h2><span><i class="fa fa-quote-left" aria-hidden="true"></i> Best Service and Food<span class='spacer'></span><br /><span class='spacer'></span>In Fresno <i class="fa fa-quote-right" aria-hidden="true"></i></span></h2>
+    </div>
+    </section>
+    
+    <section class='body-menu'>
+        <h1> Menu Items </h1>
+        <hr>
+        
+        <div class="container"> 
+            
+            <img src="images/char-burger.jpg" height="300" width="300" />
+            <p>Char-Burger Special <br /> $5.50</p>
+        </div>
+        <div class="container"> 
+            <img class="middle.img" src="images/stock-burger.jpg" height="300" width="300" />
+            <p>California Burger <br /> $ 6</p>
+        </div>
+        <div class="container"> 
+            <img src="images/Hawaiian-Burger.png" height="300" width="300" />
+            <p>Hawaiian Burger <br /> $ 7</p>
+        </div>
+        
+        <button type="button" class="btn"><a href="menu.html">See Full Menu</a></button>
+    </section>
+    
+    <section class="copy">
+        <ul class="social">
+            <li><a href="#" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+        </ul>
+        <p id='copyright'> Copyright &copy; 2016. Charlies Burgers. All Rights Reserved.</p>
+        <p id='design'> Designed by Carlos Hernandez. <a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></p>
+    </section>
+</body>
 </html>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78244005-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

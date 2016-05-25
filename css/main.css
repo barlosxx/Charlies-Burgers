@@ -1,69 +1,275 @@
+/*COPY ALL CODE BELOW*/
+
 html {
-    background-color:#ffffff;
-    width:100%;
-    height:100%;
-}
-.header {
-    background-color:#66B698;
-    height: 200px;
+    background-color: #ffffff;
     width: 100%;
-}
-#title {
-    font-family:'oswald';
-    color: #ffffff;
-    font-size: 60px;
-    text-align:center;
-    width:100%;
-}
-/*NAVIGATION CODE STARTS HERE*/
-.navigation { 
-    display: block;
-    margin: 0 auto;
-}
-.navigation ul {
-  font: bold 14px "oswald", Helvetica, Arial, sans-serif;
-  margin:  0;
-  padding: 0;
-  text-transform: uppercase;
-}
-.navigation li {
-  display: inline-block;
-}
-.navigation a {
-  background: #395870;
-  background: linear-gradient(#EAEAEA, #49AD87);
-  border-right: 1px solid rgba(0, 0, 0, .3);
-  color: #fff;
-  padding: 12px 20px;
-  text-decoration: none;
-}
-.navigation a:hover {
-  background: #2D7F60;
-  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .3);
-}
-.navigation li:first-child a {
-  border-radius: 4px 0 0 4px;
-}
-.navigation li:last-child a {
-  border-right: 0;
-  border-radius: 0 4px 4px 0;
+    height: 100%;
 }
 
-/*NAVIGATION CODE ENDS HERE*/
-.menu {
-    border-radius: 5%;
-    background-color:#D8DBD8;
-    width: 100%;
-    height: 300px;
+body {
+    padding: 0;
+    margin: 0;
 }
-#items {
-    
+
+a {
+    color:#fff;
+    text-decoration: none;
+}
+
+.header {
+    background-color: #8B0A06;
+    height: 100px;
+    width: 100%;
+}
+
+#title {
+    font-family: 'oswald';
+    color: #ffffff;
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+}
+
+.menu-bar {
+    background: #8B0A06;
+    display: block;
+    text-align: center;
+    height: 47px;
+    margin: 0;
+}
+
+
+/*----- Menu Outline -----*/
+
+.menu-wrap {
+    margin-top: -16px;
+    width: 100%;
+    /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);*/
+}
+
+.menu {
+    margin: 0px auto;
+}
+
+.menu li {
+    margin: 0px;
+    list-style: none;
+    font-family: 'oswald';
+}
+
+.menu a {
+    transition: all linear 0.15s;
+    color: #ffffff;
+}
+
+.menu li:hover > a,
+.menu .current-item > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu .arrow {
+    font-size: 11px;
+    line-height: 0%;
+}
+
+
+/*----- Top Level -----*/
+
+.menu > ul > li {
+    display: inline-block;
+    position: relative;
+    font-size: 17px;
+}
+
+.menu > ul > li > a {
+    padding: 10px 40px;
+    display: inline-block;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.menu > ul > li:hover > a,
+.menu > ul > .current-item > a {
+    background: #6C0E0B;
+}
+
+
+/*----- Bottom Level -----*/
+
+.menu li:hover .sub-menu {
+    z-index: 1;
+    opacity: 1;
+}
+
+.sub-menu {
+    width: 160%;
+    padding: 5px 0px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity linear 0.15s;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    background: #6C0E0B;
+}
+
+.sub-menu li {
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.sub-menu li a {
+    padding: 10px 30px;
+    display: block;
+    text-decoration: none;
+}
+
+.sub-menu li a:hover,
+.sub-menu .current-item a {
+    background: #8B0A06;
+}
+
+
+/*COPY ALL CODE ABOVE*/
+
+
+/*Picture Code Starts Here*/
+
+.image {
+    position: relative;
+    width: 100%;
+    /* for IE 6 */
+/*    -webkit-filter: contrast(200%);*/
+/*    -moz-filter: contrast(200%);*/
+}
+
+#ch {
+    width: 100%;
+}
+
+h2 {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+h2 span {
+    color: white;
+    font: bold 50px/75px 'Oswald', Helvetica, Sans-Serif;
+    background: rgb(0, 0, 0);
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.spacer {
+    padding: 0 5px;
+}
+
+
+/*Picture Code Ends Here*/
+
+
+/*body code starts here*/
+
+.body-menu {
+    background-color: #ffffff;
+    text-align: center;
+    height: 650px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: inline-block;
+    padding: 15px 50px;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'oswald';
+    text-align: center;
 }
  
-li {
-  background: url("images/burger-flat.png");
-  background: no-repeat;
-  background-attachment: fixed;
-  list-style-type: none;
-  padding-left: 12px;
+h1 {
+    font-size: 40px;
+    font-family: 'oswald';
+    text-align: center;
 }
+
+.btn {
+    background-color: #8B0A06; /* Red */
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'oswald', helvetica, arial, sans-serif;
+}
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.54), 0 17px 50px 0 rgba(0,0,0,0.59);
+}
+
+
+
+
+/*Body Code Ends Here*/
+
+
+/*COPY THIS CODE BELOW*/
+
+
+/*Footer Begins Here*/
+
+.copy {
+    background-color: #8B0A06;
+    height: 150px;
+    padding: 10px;
+    margin: 0;
+}
+
+#copyright {
+    font-family: 'oswald';
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+#design {
+    font-family: 'oswald';
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/*Footer Ends Here*/
+
+i {
+    color: white;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    margin-left: -40px;
+}
+
+li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+/*COPY THIS CODE*/
